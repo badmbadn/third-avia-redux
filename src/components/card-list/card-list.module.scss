@@ -1,0 +1,100 @@
+.cards {
+  width: 70%;
+  margin-left: 20px;
+  background-color: #f1fcff;
+  padding-left: 0;
+}
+.card-list {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+}
+.card-list__item {
+  display: flex;
+  flex-direction: column;
+  border:1px solid #dfe5ec;
+  background-color: #fff;
+  border-radius: 7px;
+  height: 185px;
+
+  padding: 7px 20px;
+  margin-top: 20px;
+}
+.card-list__item-price {
+  display: flex;
+  justify-content: space-between;
+  color: #2196F3;
+  margin: 5px 0 0 20px;
+  font-size: 24px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  line-height: 15px;
+}
+.card-list__item-img {
+  margin-right: 20px;
+  margin-top: 7px;
+  width: 110px;
+  height: 36px;
+  display: block;
+}
+.card-list__item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 20px;
+
+}
+.avia-info__segment {
+  display: flex;
+  justify-content: space-between;
+}
+.avia-info__title-descr {
+  color: #A0B0B9;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+.avia-info__descr-info {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+.more-btn {
+  width: 100%;
+  border-radius: 6px;
+  height: 45px;
+  cursor: pointer;
+  background-color: #2196F3;
+  outline: none;
+  border: 1px solid #2196F3;
+  color:#fff;
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .cards{
+    margin-left: 0;
+    margin-top: 20px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .card-list__item-info{
+      width: 88%;
+  }
+  .card-list__item-info{
+      font-size: 20px;
+  }
+  .card-list__item {
+    padding: 5px;
+    width: auto;
+  }
+  .avia-info__descr-info{
+      font-size: 12px;
+  }
+  .avia-info__title-descr{
+      font-size: 10px;
+  }
+}
